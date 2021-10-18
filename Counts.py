@@ -17,3 +17,16 @@ for i in range(0,5146):
     b = list(clas[i].split('"'))
     count.append(b)
 
+# To check and verify the clas labels
+# len(count)
+
+# Making a counting function
+def counting(strparam):
+    p = []
+    for i in count:
+        for j in i:
+            if j == strparam:
+                p.append(j)
+    return len(p)
+
+

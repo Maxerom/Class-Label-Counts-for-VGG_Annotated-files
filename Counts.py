@@ -20,7 +20,7 @@ for i in range(0,5146):
 # To check and verify the clas labels
 # len(count)
 
-# Making a counting function
+# Making a counting function to count from count []
 def counting(strparam):
     p = []
     for i in count:

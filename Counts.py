@@ -11,3 +11,9 @@ print(annot)
 clas = annot["region_attributes"]
 #print(clas)
 
+# Splitting the string and appending in a list
+count = []
+for i in range(0,5146):
+    b = list(clas[i].split('"'))
+    count.append(b)
+

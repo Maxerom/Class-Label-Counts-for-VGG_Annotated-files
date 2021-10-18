@@ -34,3 +34,11 @@ def counting(strparam):
 names = pd.read_csv('count_engro_sortcount_modified.csv')
 names = names['Names']
 
+# Rearranging the Original class labels file
+pro = pd.concat([pd.DataFrame([i], columns = ['Names']) for i in names], ignore_index = True)
+#print(pro)
+
+# Counting the labels of class in a new file
+con = pd.concat([pd.DataFrame([counting(i)], columns = ['Counts']) for i in names], ignore_index = True)
+#print(con)
+

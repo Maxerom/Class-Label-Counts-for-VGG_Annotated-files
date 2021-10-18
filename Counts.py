@@ -42,3 +42,7 @@ pro = pd.concat([pd.DataFrame([i], columns = ['Names']) for i in names], ignore_
 con = pd.concat([pd.DataFrame([counting(i)], columns = ['Counts']) for i in names], ignore_index = True)
 #print(con)
 
+# Combining the two files for the final results
+df = pd.concat([pro,con], axis = 1 )
+#print(df)
+

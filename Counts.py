@@ -54,4 +54,12 @@ df = pd.concat([pro,con], axis = 1 )
 # Create a new csv file as it is. You can also change the of the file.
 df.to_csv('counts(default).csv',index = False)
 
+# Below are the optional commands if you wanna save the file sorted by Alphabets (Remove the comments to use it)
+# df = df.sort_values(by = ['Names'])
+# df = df.reset_index().drop(columns='index')
+# df.to_csv('counts(sorted_by_Name).csv',index = False)
 
+# Below are the optional commands if you wanna save the file sorted by Counts (Remove the comments to use it)
+# df = df.sort_values(by = ['Counts'])
+# df = df.reset_index().drop(columns='index')
+# df.to_csv('counts(sorted_by_Counts).csv',index = False)

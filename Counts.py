@@ -46,3 +46,12 @@ con = pd.concat([pd.DataFrame([counting(i)], columns = ['Counts']) for i in name
 df = pd.concat([pro,con], axis = 1 )
 #print(df)
 
+# Before running this command kindly download tabulate library
+#conda install tabulate (As I was using Anaconda for testing purposes)
+# To see the output
+# print(df.to_markdown())
+
+# Create a new csv file as it is. You can also change the of the file.
+df.to_csv('counts(default).csv',index = False)
+
+

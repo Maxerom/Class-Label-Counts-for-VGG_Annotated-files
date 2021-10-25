@@ -13,7 +13,7 @@ clas = annot["region_attributes"]
 
 # Splitting the string and appending in a list
 count = []
-for i in range(0,5146):
+for i in range(0,len(annot)):
     b = list(clas[i].split('"'))
     count.append(b)
 
